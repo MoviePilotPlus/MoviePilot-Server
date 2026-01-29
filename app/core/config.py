@@ -32,6 +32,11 @@ class Settings(BaseSettings):
     TMDB_API_URL: str = "https://api.themoviedb.org/3"
     TMDB_TIMEOUT: int = 10
 
+    # 115网盘 OAuth2配置
+    U115_CLIENT_ID: str = ""
+    U115_CLIENT_SECRET: str = ""
+    U115_REDIRECT_URI: str = ""
+
     class Config:
         env_file = ".env"
         case_sensitive = True
